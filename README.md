@@ -1,0 +1,2 @@
+# sudokuToSAT
+sudoku to sat
