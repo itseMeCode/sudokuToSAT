@@ -2,7 +2,7 @@ import string
 import math
 
 nodes = string.ascii_lowercase[:16]
-colors = ['red', 'green', 'blue', 'yellow']
+colors = ['1', '2', '3', '4']
 
 row_length = math.sqrt(len(nodes))
 box_length = math.sqrt((row_length))
@@ -94,11 +94,9 @@ for box_index, box in enumerate(boxes):
                     sat_clause = f'(!{node}_{color} | !{box[index]}_{color}) & '
                     sat_formula += sat_clause
 
-# for sudokuXX.boole
+# for sudokuXX.boole example
 """ sat_formula += f'(i_1) & '
-sat_formula += f'(l_4) & '
-sat_formula += f'(m_2) & '
-sat_formula += f'(o_3) & ' """
+"""
 
 # for unsat-sudokuXX.boole
 """ for node in nodes:
